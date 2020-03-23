@@ -5,14 +5,17 @@
     <title>서울우유 | 브랜드</title>
     <link rel="shortcut icon" href="../res/favicon.ico" type="image/x-icon">
     <link rel="icon" href="../res/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../../css/style.css">    
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="css/detail.css">
     <link rel="stylesheet" href="../css/product_style.css">
     <script src="../../js/jquery-3.4.1.min.js"></script>
     <script src="../../js/style.js"></script>
     <script src="../js/product_style.js"></script>
+    <script src="js/detail.js"></script>
 </head>
+
 <body>
-     <header>
+    <header>
         <div class="header_util">
             <div class="util_wrap">
                 <div class="util left">
@@ -95,12 +98,12 @@
             </div>
         </div>
     </header>
-<!--    header End-->
-     <div class="spot">
+    <!--    header End-->
+    <div class="spot">
         <span>행복한 젖소, 행복한 우유, 행복한 고객</span>
     </div>
-<!--    spot End-->
-<div class="selection">
+    <!--    spot End-->
+    <div class="selection">
         <div class="sel_wrap">
             <ul class="location">
                 <li><a href="../../seoulmlik.html"><img src="../../img/product/icon_home.png" alt="home"></a></li>
@@ -125,6 +128,144 @@
             </ul>
         </div>
     </div>
-<!--    selection End-->
-</body>
-</html>
+    <!--    selection End-->
+    <div class="product_view">
+        <div class="detail_view">
+            <div class="detail">
+                <div class="detail_img">
+                    <img id="largeImage" src="../../img/product/product/product_1.jpg" alt="product">
+                </div>
+                <div class="detail_thum">
+                    <a href="#"><span id="slider prev">▲</span></a>
+                    <div class="thum_wrap">
+                        <ul id="thumbs">
+                            <li><img id="on" src="../../img/product/product/product_1.jpg" alt="1st image description"></li>
+                            <li><img src="../../img/product/detail/detail_1.jpg" alt="2nd image description"></li>
+                            <li><img src="../../img/product/detail/detail_2.jpg" alt="3rd image description"></li>
+                        </ul>
+                    </div>
+                    <a href=""><span id="slider next">▼</span></a>
+                </div>
+            </div>
+            <div class="detail_data">
+               <div id="sns">
+                   <a href="#"><img src="../../img/logo_facebook.png" alt="sns"></a>
+                   <a href="#"><img src="../../img/logo_twitter.png" alt="sns"></a>
+               </div>
+                <h1>
+                    건강한 한 잔
+                    <br>
+                    <strong>서울우유</strong>
+                </h1>
+                <p>#서울우유#1등급A원유</p>
+                <ul>
+                    <li id="weight"><span>중량</span>
+                        <p>1000ml</p>
+                    </li>
+                    <li id="life"><span>유통기한</span>
+                        <p>8일</p>
+                    </li>
+                    <li id="kcal"><span>칼로리</span>
+                        <p>650kcal</p>
+                    </li>
+                    <li id="ingredient"><span>보관방법</span><p>0~10℃ 냉장보관</p></li>
+                </ul>
+                <a href="#">구매하기</a>
+            </div>
+        </div>
+        <!--    detail view End-->
+        <div class="product_info">
+            <h3>제품정보</h3>
+            <p><img src="../../img/product/detail/seoulmilk_detail.jpg" alt="detail"></p>
+        </div>
+        <div class="view_table">
+            <h3>영양성분표</h3>
+            <p>총 내용량 1000ml/1000ml 당 65kcal</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>영양 성분표</th>
+                        <th>열량</th>
+                        <th>탄수화물</th>
+                        <th>당류</th>
+                        <th>단백질</th>
+                        <th>지방</th>
+                        <th>포화지방</th>
+                        <th>트랜스지방</th>
+                        <th>콜레스테롤</th>
+                        <th>나트륨</th>
+                        <th>칼슘</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>100ml 당 함량</td>
+                        <td>65kcal</td>
+                        <td>4.5g</td>
+                        <td>4.5g</td>
+                        <td>3g</td>
+                        <td>4g</td>
+                        <td>2.5g</td>
+                        <td>0g</td>
+                        <td>15mg</td>
+                        <td>50mg</td>
+                        <td>100mg</td>
+                    </tr>
+                    <tr id="td_bottom">
+                        <td>기준치에 대한 비율</td>
+                        <td></td>
+                        <td>1%</td>
+                        <td>5%</td>
+                        <td>5%</td>
+                        <td>7%</td>
+                        <td>17%</td>
+                        <td></td>
+                        <td>5%</td>
+                        <td>3%</td>
+                        <td>14%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>1일 영양성분 기준치에 대한 비율(%)은 2,000kcal기준이므로 개인의 필요 열량에 따라 다를 수 있습니다.</p>
+        </div>
+    </div>
+       <footer>
+        <a href="#" class="foot_logo">
+        </a>
+        <div class="foot_info">
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li class="info_on"><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">찾아오시는 길</a></li>
+                <li><a href="#">공정거래 자율준수 프로그램</a></li>
+            </ul>
+            <div class="select_box">
+                <div class="sel_box">
+                    <p>Family site</p>
+                    <p>▼</p>
+                </div>
+                <ul>
+                    <li><a href="#">우유 이야기</a></li>
+                    <li><a href="#">치즈 이야기</a></li>
+                    <li><a href="#">스페셜티 카페라떼</a></li>
+                </ul>
+            </div>
+            <div class="foot_inner">
+                <span>주소 : [도로명]서울특별시 중랑구 중랑천로 71 [지번]서울시 중랑구 상봉2동 137-7 | 조합장 : 문진섭</span><br>
+                <span>전자우편 : seoulmilk@seoulmilk.co.kr(발신전용) | 사업자번호 : 216-82-00028 </span><br>
+                <span>통신판매업 : 신고번호 중랑 제 2007-0086호</span>
+                <div class="inner">
+                        <span>서울우유는</span>
+                        <img src="../../img/logo_NH.png" alt="NH_logo">
+                        <span>중압회 회원조합입니다</span>
+                </div>
+            </div>
+            <p class="copyright">©SEOULMILK. ALL Rights Reserved</p>
+        </div>
+    </footer>
+        <aside>
+        <img src="../../img/button_arrow.png" alt="arrow">
+        <span>TOP</span>
+    </aside>
+</body></html>

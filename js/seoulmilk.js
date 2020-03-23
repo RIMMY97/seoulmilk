@@ -14,21 +14,16 @@ $("document").ready(function () {
     //player
 
     if ($("video").prop('muted')) {
-        $(".sound .ico").css("background-image", "url(../img/button_speaker.png)");
-        $(".sound .text").text("소리 on");
+        $(".sound").css("background-image", "url(../img/button_speaker.png)");
     }
 
     $(".sound").click(function () {
         if ($("video").prop('muted')) {
             $("video").prop('muted', false);
-            $(".sound .ico").css("background-image", "url(../img/button_mute.png)");
-            $(this).css("background-color", "rgba(237, 28, 36, 0.7)");
-            $(".sound .text").text("소리 off");
+            $(".sound").css("background-image", "url(../img/button_mute.png)");
         } else {
             $("video").prop('muted', true);
-            $(".sound .ico").css("background-image", "url(../img/button_speaker.png)");
-            $(".sound").css("background-color", "rgba(168, 168, 168, 0.5)");
-            $(".sound .text").text("소리 on");
+            $(".sound").css("background-image", "url(../img/button_speaker.png)");
         }
     });
 
@@ -67,22 +62,4 @@ $("document").ready(function () {
     })
 
     // story mouse over __ 쉬운 방법이 있을텐데 아직 못 찾았다 ㅠ
-
-    $(window).scroll(function () {
-        var pos = $(window).scrollTop();
-        if (pos > 100) {
-            $("aside").fadeIn(500)
-        } else {
-            $("aside").fadeOut(500)
-        }
-        //scroll aside
-    })
-
-    $("aside").click(function () {
-        $("html, body").stop().animate({
-            scrollTop: 0
-        }, 500)
-    })
-
-    //aside
 })

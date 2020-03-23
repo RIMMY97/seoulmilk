@@ -24,4 +24,22 @@ $("document").ready(function () {
     })
 
     //footer End
+    
+     $(window).scroll(function () {
+        var pos = $(window).scrollTop();
+        if (pos > 100) {
+            $("aside").fadeIn(500)
+        } else {
+            $("aside").fadeOut(500)
+        }
+        //scroll aside
+    })
+
+    $("aside").click(function () {
+        $("html, body").stop().animate({
+            scrollTop: 0
+        }, 500)
+    })
+
+    //aside
 })

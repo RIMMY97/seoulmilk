@@ -9,11 +9,8 @@
 .main video { object-fit: cover; }
 .main .control { position: absolute; left: 50%; transform: translateY(-50%); bottom: 80px; }
 .main .control button { cursor: pointer; border: none; background-color: transparent; margin-right: 20px; color: #fff; box-sizing: border-box; }
-.main .control .player { background: url(../img/button_pause.png) center/cover; width: 30px; height: 30px; }
-.main .control .sound { position: relative; width: 110px; height: 35px; border-radius: 30px; background-color: rgba(168, 168, 168, 0.5); }
-.main .control .sound span { display: inline-block; margin-right: 5px; }
-.main .control .sound .ico { height: 22px; width: 22px; background-size: cover; }
-.main .control .sound .text { font-size: 18px; }
+.main .control .player { background: url(../img/button_pause.png) center/cover; width: 30px; height: 40px; }
+.main .control .sound { position: relative; width: 135px; height: 40px; }
 
 .quick_link { height: 174px; overflow: hidden; margin-bottom: 103px; }
 .quick_link .quick_link_wrap { height: 100%; }
@@ -84,10 +81,5 @@
 .sns .boundary { position: absolute; bottom: 25px; width: 30%; height: 1px; background-color: #000; }
 .sns .left { left: 0; }
 .sns .right { right: 0; }
-
-aside { position: fixed; cursor: pointer; display: none; bottom: 80px; right: 80px; width: 80px; height: 80px; border-radius: 30px; background-color: #fff; box-shadow: 8px 8px 0px #FB8C8C; }
-aside img, aside span { position: absolute; left: 50%; transform: translateX(-50%); }
-aside img { top: 20px; width: 16px; height: 12px; }
-aside span { top: 40px; font-size: 16px; text-align: center; font-weight: 700; }
 
 /*# sourceMappingURL=seoulmilk.css.map */

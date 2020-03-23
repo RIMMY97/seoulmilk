@@ -76,30 +76,13 @@ footer {
         .player {
             background: url(../img/button_pause.png) center/cover;
             width: 30px;
-            height: 30px;
+            height: 40px;
         }
 
         .sound {
             position: relative;
-            width: 110px;
-            height: 35px;
-            border-radius: 30px;
-            background-color: rgba(168, 168, 168, 0.5);
-
-            span {
-                display: inline-block;
-                margin-right: 5px;
-            }
-
-            .ico {
-                height: 22px;
-                width: 22px;
-                background-size: cover;
-            }
-
-            .text {
-                font-size: 18px;
-            }
+            width: 135px;
+            height: 40px;            
         }
     }
 }
@@ -521,39 +504,3 @@ footer {
 }
 
 //sns End
-
-
-aside {
-    position: fixed;
-    cursor: pointer;
-    display: none;
-    bottom: 80px;
-    right: 80px;
-    width: 80px;
-    height: 80px;
-    border-radius: 30px;
-    background-color: #fff;
-    box-shadow: 8px 8px 0px #FB8C8C;
-
-    img,
-    span {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    img {
-        top: 20px;
-        width: 16px;
-        height: 12px;
-    }
-
-    span {
-        top: 40px;
-        font-size: 16px;
-        text-align: center;
-        font-weight: 700;
-    }
-}
-
-//aisde End
